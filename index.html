@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jaehyang Blog</title>
+    <meta name="description" content="jaehyang Blog - ideas, law, technology, and everyday notes.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="jaehyang Blog home">
+        <span class="brand-mark">J</span>
+        <span>jaehyang Blog</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#posts">Posts</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="A warm desk with notes, books, and a laptop"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Law, technology, daily thought</p>
+          <h1 id="hero-title">jaehyang Blog</h1>
+          <p class="hero-copy">
+            복잡한 정보 속에서 핵심을 발견하고, 읽기 좋은 글로 정리하는 개인 지식 아카이브.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#posts">최신 글 보기</a>
+            <a class="secondary-action" href="#topics">주제 탐색</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="topics" id="topics" aria-label="Featured topics">
+        <button class="topic active" type="button" data-topic="all">All</button>
+        <button class="topic" type="button" data-topic="law">Law</button>
+        <button class="topic" type="button" data-topic="ai">AI</button>
+        <button class="topic" type="button" data-topic="business">Business</button>
+        <button class="topic" type="button" data-topic="life">Life</button>
+      </section>
+
+      <section class="posts-section" id="posts" aria-labelledby="posts-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Archive</p>
+            <h2 id="posts-title">Explore Posts</h2>
+          </div>
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="키워드로 찾기" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="post-grid" id="postGrid" aria-live="polite"></div>
+
+        <nav class="pagination" aria-label="Post pages">
+          <button class="page-control" id="prevPage" type="button" aria-label="Previous page">Prev</button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-control" id="nextPage" type="button" aria-label="Next page">Next</button>
+        </nav>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">읽는 사람의 시간을 아끼는 블로그</h2>
+        <p>
+          jaehyang Blog는 법률 정보, AI 활용, 창업과 일상 기록을 간결하게 엮어내는 공간입니다.
+          많은 글을 빠르게 훑고 필요한 글로 이동할 수 있도록 카드형 그리드와 하단 페이지네이션을 중심에 두었습니다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 jaehyang Blog</span>
+      <a href="#posts">Back to posts</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
