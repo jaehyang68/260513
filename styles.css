@@ -275,8 +275,11 @@ a {
 
 .post-image {
   aspect-ratio: 16 / 10;
+  width: 100%;
+  border: 0;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .post-body {
@@ -306,6 +309,21 @@ a {
   word-break: keep-all;
 }
 
+.post-title-button {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.post-title-button:hover,
+.read-link:hover {
+  color: var(--clay);
+}
+
 .post-card p {
   margin: 0;
   color: var(--muted);
@@ -315,8 +333,13 @@ a {
 
 .read-link {
   width: max-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: var(--forest);
+  font: inherit;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .pagination {
@@ -373,6 +396,99 @@ a {
   background: #fffdf8;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.post-detail {
+  width: min(920px, calc(100% - 36px));
+  margin: 40px auto 86px;
+  overflow: hidden;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.post-detail[hidden] {
+  display: none;
+}
+
+.detail-back {
+  margin: 20px 20px 0;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--forest);
+  background: var(--paper);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.detail-hero {
+  margin-top: 18px;
+  aspect-ratio: 16 / 7;
+  background-size: cover;
+  background-position: center;
+}
+
+.detail-body {
+  padding: clamp(24px, 5vw, 54px);
+}
+
+.detail-body h2 {
+  margin: 18px 0 16px;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.14;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.detail-lead {
+  margin: 0 0 34px;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.detail-section {
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.detail-section + .detail-section {
+  margin-top: 28px;
+}
+
+.detail-section h3 {
+  margin: 0 0 14px;
+  color: var(--forest-deep);
+  font-size: 25px;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.detail-section p {
+  margin: 0;
+  color: #3e3932;
+  font-size: 17px;
+  line-height: 1.9;
+  word-break: keep-all;
+}
+
+.detail-section p + p {
+  margin-top: 14px;
+}
+
+.detail-note {
+  margin-top: 34px;
+  padding: 18px;
+  color: var(--muted);
+  background: var(--paper);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  line-height: 1.7;
 }
 
 .about {
@@ -446,6 +562,10 @@ a {
   .post-grid {
     grid-template-columns: 1fr;
     min-height: auto;
+  }
+
+  .detail-hero {
+    aspect-ratio: 4 / 3;
   }
 
   .pagination {
