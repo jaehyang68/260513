@@ -1,89 +1,97 @@
 const posts = [
   {
-    title: "임신기 근로시간 단축, 회사가 꼭 알아야 할 것",
-    category: "law",
-    date: "May 20, 2026",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
-    excerpt: "근로기준법상 임신기 근로시간 단축의 요건, 신청 절차, 회사의 대응 원칙을 실무 중심으로 정리합니다."
+    title: "전세보증금이 안 돌아올 때, 첫날 해야 할 일",
+    category: "housing",
+    date: "2026.05.20",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80",
+    excerpt: "내용증명부터 임차권등기명령까지, 당황한 임차인이 순서대로 챙겨야 할 대응을 이야기처럼 풀어봅니다."
   },
   {
-    title: "AI로 법률 리서치를 시작할 때 확인할 세 가지",
-    category: "ai",
-    date: "May 18, 2026",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    excerpt: "AI 답변을 그대로 믿기 전, 조문 검증과 출처 확인, 적용 시점 확인이 왜 중요한지 살펴봅니다."
-  },
-  {
-    title: "작은 사업자가 계약서를 읽는 순서",
-    category: "business",
-    date: "May 16, 2026",
+    title: "월급이 밀렸다면 사장님 말보다 먼저 볼 것",
+    category: "work",
+    date: "2026.05.18",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
-    excerpt: "대금, 해지, 손해배상, 비밀유지 조항을 빠르게 훑는 계약서 체크 방식을 소개합니다."
+    excerpt: "체불임금 확인서, 진정 절차, 지연이자까지. 임금 체불 상황에서 놓치기 쉬운 포인트를 정리합니다."
   },
   {
-    title: "하루를 덜 복잡하게 만드는 기록 습관",
-    category: "life",
-    date: "May 14, 2026",
-    image: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80",
-    excerpt: "메모가 쌓일수록 찾기 어려워지는 문제를 줄이는 태그와 주간 리뷰 방식."
+    title: "계약금 걸었는데 마음이 바뀌면 돌려받을 수 있을까",
+    category: "contract",
+    date: "2026.05.16",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
+    excerpt: "계약금, 해약금, 위약금이 어떻게 다른지 실제 거래 장면으로 쉽게 구분해봅니다."
   },
   {
-    title: "법령 개정 이력을 볼 때 놓치기 쉬운 시행일",
-    category: "law",
-    date: "May 11, 2026",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80",
-    excerpt: "공포일과 시행일은 다릅니다. 실제 사건에 어떤 시점의 법이 적용되는지 확인하는 방법입니다."
+    title: "상속 포기와 한정승인, 이름은 어렵지만 선택은 현실적이다",
+    category: "family",
+    date: "2026.05.14",
+    image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=80",
+    excerpt: "빚이 많은 상속을 마주했을 때 3개월 안에 결정해야 하는 두 가지 선택지를 비교합니다."
   },
   {
-    title: "업무 자동화 전에 먼저 정리할 질문",
-    category: "ai",
-    date: "May 9, 2026",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
-    excerpt: "자동화할 업무, 남겨야 할 판단, 사람이 최종 확인해야 할 지점을 나누는 간단한 프레임입니다."
+    title: "중고거래 사기, 경찰서 가기 전 캡처해야 할 것들",
+    category: "consumer",
+    date: "2026.05.12",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    excerpt: "대화방, 계좌번호, 게시글, 송금 내역. 증거가 흩어지기 전에 안전하게 모으는 방법입니다."
   },
   {
-    title: "고객 문의를 지식 자산으로 바꾸는 법",
-    category: "business",
-    date: "May 6, 2026",
+    title: "임신한 직원의 근로시간 단축, 회사가 거절할 수 있을까",
+    category: "work",
+    date: "2026.05.10",
+    image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=80",
+    excerpt: "임신기 근로시간 단축의 요건, 신청서, 임금 삭감 금지까지 실무자가 알아야 할 내용을 풀어봅니다."
+  },
+  {
+    title: "관리비가 갑자기 올랐다면 어디까지 따져볼 수 있을까",
+    category: "housing",
+    date: "2026.05.08",
+    image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
+    excerpt: "아파트와 오피스텔 관리비 내역을 볼 때 확인해야 할 항목과 자료 요청 방법을 살펴봅니다."
+  },
+  {
+    title: "프리랜서 계약서에서 제일 무서운 한 줄",
+    category: "contract",
+    date: "2026.05.06",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+    excerpt: "성과물 소유권, 수정 범위, 대금 지급일을 놓치면 좋은 일도 분쟁이 됩니다."
+  },
+  {
+    title: "이혼 이야기가 나왔을 때 재산부터 정리해야 하는 이유",
+    category: "family",
+    date: "2026.05.04",
+    image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&fit=crop&w=900&q=80",
+    excerpt: "감정과 별개로 통장, 대출, 부동산, 보험 자료를 먼저 정리해야 협의가 쉬워집니다."
+  },
+  {
+    title: "헬스장 환불 거절, 규정표만 보고 포기하지 마세요",
+    category: "consumer",
+    date: "2026.05.02",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80",
+    excerpt: "소비자분쟁해결기준과 약관의 관계를 알면 환불 협상에서 말문이 트입니다."
+  },
+  {
+    title: "해고 통보를 문자로 받았다면 바로 답장하지 마세요",
+    category: "work",
+    date: "2026.04.30",
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-    excerpt: "반복 질문을 FAQ, 체크리스트, 온보딩 문서로 전환하는 운영 루틴."
+    excerpt: "해고예고, 서면 통지, 부당해고 구제신청까지 차분히 확인해야 할 순서가 있습니다."
   },
   {
-    title: "판례를 읽을 때 사실관계부터 보는 이유",
-    category: "law",
-    date: "May 2, 2026",
-    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=80",
-    excerpt: "결론만 복사하면 위험합니다. 사실관계, 쟁점, 법원의 판단 구조를 함께 읽어야 합니다."
-  },
-  {
-    title: "나만의 AI 프롬프트 저장소 만들기",
-    category: "ai",
-    date: "Apr 29, 2026",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-    excerpt: "자주 쓰는 프롬프트를 역할, 입력, 출력, 검증 기준으로 나누어 재사용하는 방법."
-  },
-  {
-    title: "집중을 되찾는 오후 20분 정리",
-    category: "life",
-    date: "Apr 25, 2026",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
-    excerpt: "업무 전환이 많은 날에도 흐름을 되찾는 짧은 정리 루틴."
-  },
-  {
-    title: "사업 초기 문서의 최소 세트",
-    category: "business",
-    date: "Apr 21, 2026",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
-    excerpt: "제안서, 견적서, 계약서, 세금계산서 흐름을 처음부터 깔끔하게 잡는 법."
-  },
-  {
-    title: "법률 문서에서 인용 오류를 줄이는 습관",
-    category: "law",
-    date: "Apr 18, 2026",
-    image: "https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&w=900&q=80",
-    excerpt: "조문번호, 항호목, 개정 시점, 법령명 약칭을 확인하는 기본 체크리스트."
+    title: "친구에게 빌려준 돈, 민망해도 차용증이 필요한 이유",
+    category: "contract",
+    date: "2026.04.28",
+    image: "https://images.unsplash.com/photo-1554224154-26032fced8bd?auto=format&fit=crop&w=900&q=80",
+    excerpt: "가까운 사이일수록 금액, 변제일, 이자를 짧게라도 남겨야 나중에 감정싸움을 줄일 수 있습니다."
   }
 ];
+
+const categoryLabels = {
+  housing: "집과 임대차",
+  work: "일터와 임금",
+  contract: "계약과 돈",
+  family: "가족과 상속",
+  consumer: "소비자 분쟁"
+};
 
 const pageSize = 6;
 let activeTopic = "all";
@@ -100,7 +108,7 @@ const topicButtons = document.querySelectorAll(".topic");
 function filteredPosts() {
   return posts.filter((post) => {
     const matchesTopic = activeTopic === "all" || post.category === activeTopic;
-    const haystack = `${post.title} ${post.category} ${post.excerpt}`.toLowerCase();
+    const haystack = `${post.title} ${categoryLabels[post.category]} ${post.excerpt}`.toLowerCase();
     return matchesTopic && haystack.includes(searchTerm.toLowerCase());
   });
 }
@@ -117,18 +125,18 @@ function renderPosts() {
       <div class="post-image" style="background-image: url('${post.image}')" aria-hidden="true"></div>
       <div class="post-body">
         <div class="post-meta">
-          <span class="post-tag">${post.category}</span>
+          <span class="post-tag">${categoryLabels[post.category]}</span>
           <span>${post.date}</span>
         </div>
         <h3>${post.title}</h3>
         <p>${post.excerpt}</p>
-        <a class="read-link" href="#" aria-label="${post.title} 읽기">Read article</a>
+        <a class="read-link" href="#" aria-label="${post.title} 읽기">쉽게 읽기</a>
       </div>
     </article>
   `).join("");
 
   if (pagePosts.length === 0) {
-    postGrid.innerHTML = `<p class="empty-state">검색 결과가 없습니다.</p>`;
+    postGrid.innerHTML = `<p class="empty-state">검색 결과가 없습니다. 다른 생활법률 키워드로 찾아보세요.</p>`;
   }
 
   renderPagination(pageCount);
@@ -141,7 +149,7 @@ function renderPagination(pageCount) {
   pageNumbers.innerHTML = Array.from({ length: pageCount }, (_, index) => {
     const page = index + 1;
     const active = page === currentPage ? " active" : "";
-    return `<button class="page-number${active}" type="button" data-page="${page}" aria-label="Page ${page}">${page}</button>`;
+    return `<button class="page-number${active}" type="button" data-page="${page}" aria-label="${page}페이지">${page}</button>`;
   }).join("");
 }
 

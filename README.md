@@ -1,7 +1,11 @@
-# jaehyang Blog
+# 재향 생활법률 블로그
 
-A static GitHub Pages blog with a visual hero, topic filters, searchable card grid, and bottom pagination.
+생활 속 법률 문제를 재미있고 쉽게 풀어 설명하는 정적 GitHub Pages 블로그입니다.
 
-## Local Preview
+## 구성
 
-Open `index.html` in a browser, or serve the folder with any static server.
+- 한국어 중심 문구
+- 생활법률 주제 필터
+- 카드형 포스트 그리드
+- 검색 기능
+- 하단 페이지네이션
