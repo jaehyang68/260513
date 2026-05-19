@@ -3,83 +3,86 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jaehyang Blog</title>
-    <meta name="description" content="jaehyang Blog - ideas, law, technology, and everyday notes.">
+    <title>재향 생활법률 블로그</title>
+    <meta name="description" content="생활 속 법률 문제를 재미있고 쉽게 풀어 설명하는 재향 생활법률 블로그.">
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="jaehyang Blog home">
-        <span class="brand-mark">J</span>
-        <span>jaehyang Blog</span>
+      <a class="brand" href="#" aria-label="재향 생활법률 블로그 홈">
+        <span class="brand-mark">법</span>
+        <span>재향 생활법률</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#posts">Posts</a>
-        <a href="#topics">Topics</a>
-        <a href="#about">About</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#posts">글 모아보기</a>
+        <a href="#topics">주제별 탐색</a>
+        <a href="#about">블로그 소개</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" role="img" aria-label="A warm desk with notes, books, and a laptop"></div>
+        <div class="hero-media" role="img" aria-label="법률 서류와 책이 놓인 책상"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Law, technology, daily thought</p>
-          <h1 id="hero-title">jaehyang Blog</h1>
+          <p class="eyebrow">생활 속 법률을 쉽고 재미있게</p>
+          <h1 id="hero-title"><span>재향 생활법률</span><span>블로그</span></h1>
           <p class="hero-copy">
-            복잡한 정보 속에서 핵심을 발견하고, 읽기 좋은 글로 정리하는 개인 지식 아카이브.
+            전세, 임금, 계약, 상속, 소비자 분쟁까지. 딱딱한 법률 용어를 일상의 언어로 풀어
+            오늘 바로 써먹을 수 있는 법률 이야기를 발행합니다.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="#posts">최신 글 보기</a>
-            <a class="secondary-action" href="#topics">주제 탐색</a>
+            <a class="primary-action" href="#posts">인기 글 보기</a>
+            <a class="secondary-action" href="#topics">사례별로 찾기</a>
           </div>
         </div>
       </section>
 
-      <section class="topics" id="topics" aria-label="Featured topics">
-        <button class="topic active" type="button" data-topic="all">All</button>
-        <button class="topic" type="button" data-topic="law">Law</button>
-        <button class="topic" type="button" data-topic="ai">AI</button>
-        <button class="topic" type="button" data-topic="business">Business</button>
-        <button class="topic" type="button" data-topic="life">Life</button>
+      <section class="topics" id="topics" aria-label="생활법률 주제">
+        <button class="topic active" type="button" data-topic="all">전체</button>
+        <button class="topic" type="button" data-topic="housing">집과 임대차</button>
+        <button class="topic" type="button" data-topic="work">일터와 임금</button>
+        <button class="topic" type="button" data-topic="contract">계약과 돈</button>
+        <button class="topic" type="button" data-topic="family">가족과 상속</button>
+        <button class="topic" type="button" data-topic="consumer">소비자 분쟁</button>
       </section>
 
       <section class="posts-section" id="posts" aria-labelledby="posts-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Archive</p>
-            <h2 id="posts-title">Explore Posts</h2>
+            <p class="eyebrow">글 보관함</p>
+            <h2 id="posts-title">생활법률 포스트</h2>
           </div>
           <label class="search-box">
-            <span>Search</span>
-            <input id="searchInput" type="search" placeholder="키워드로 찾기" autocomplete="off">
+            <span>검색</span>
+            <input id="searchInput" type="search" placeholder="전세, 해고, 계약금처럼 검색" autocomplete="off">
           </label>
         </div>
 
         <div class="post-grid" id="postGrid" aria-live="polite"></div>
 
-        <nav class="pagination" aria-label="Post pages">
-          <button class="page-control" id="prevPage" type="button" aria-label="Previous page">Prev</button>
+        <nav class="pagination" aria-label="포스트 페이지 이동">
+          <button class="page-control" id="prevPage" type="button" aria-label="이전 페이지">이전</button>
           <div class="page-numbers" id="pageNumbers"></div>
-          <button class="page-control" id="nextPage" type="button" aria-label="Next page">Next</button>
+          <button class="page-control" id="nextPage" type="button" aria-label="다음 페이지">다음</button>
         </nav>
       </section>
 
       <section class="about" id="about" aria-labelledby="about-title">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">읽는 사람의 시간을 아끼는 블로그</h2>
+        <p class="eyebrow">블로그 소개</p>
+        <h2 id="about-title">법률 문턱을 낮추는 생활형 설명서</h2>
         <p>
-          jaehyang Blog는 법률 정보, AI 활용, 창업과 일상 기록을 간결하게 엮어내는 공간입니다.
-          많은 글을 빠르게 훑고 필요한 글로 이동할 수 있도록 카드형 그리드와 하단 페이지네이션을 중심에 두었습니다.
+          재향 생활법률 블로그는 복잡한 조문을 그대로 옮기기보다, 실제 생활에서 마주치는 장면을 먼저 놓고
+          쟁점, 근거, 대응 순서를 차근차근 풀어냅니다. 어렵게 느껴지는 법률도 읽고 나면
+          “아, 이렇게 움직이면 되겠구나” 하고 감이 오도록 만드는 것이 목표입니다.
         </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 jaehyang Blog</span>
-      <a href="#posts">Back to posts</a>
+      <span>© 2026 재향 생활법률 블로그</span>
+      <a href="#posts">글 목록으로 돌아가기</a>
     </footer>
 
     <script src="script.js"></script>
