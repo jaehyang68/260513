@@ -266,6 +266,7 @@ a {
 
 .post-card {
   display: grid;
+  min-width: 0;
   overflow: hidden;
   background: var(--card);
   border: 1px solid var(--line);
@@ -285,6 +286,7 @@ a {
 .post-body {
   display: grid;
   gap: 12px;
+  min-width: 0;
   padding: 20px;
 }
 
@@ -292,6 +294,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   color: var(--muted);
   font-size: 12px;
@@ -310,12 +313,15 @@ a {
 }
 
 .post-title-button {
+  width: 100%;
   padding: 0;
   border: 0;
   color: inherit;
   background: transparent;
   font: inherit;
   text-align: left;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
   cursor: pointer;
 }
 
@@ -328,6 +334,7 @@ a {
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
+  overflow-wrap: anywhere;
   word-break: keep-all;
 }
 
@@ -489,6 +496,14 @@ a {
   border-left: 4px solid var(--gold);
   border-radius: 8px;
   line-height: 1.7;
+}
+
+.detail-bottom-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
 }
 
 .about {
