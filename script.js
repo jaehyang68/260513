@@ -252,7 +252,15 @@ const prevPage = document.querySelector("#prevPage");
 const nextPage = document.querySelector("#nextPage");
 const searchInput = document.querySelector("#searchInput");
 const topicButtons = document.querySelectorAll(".topic");
-const postDetail = document.querySelector("#postDetail");
+let postDetail = document.querySelector("#postDetail");
+if (!postDetail) {
+  postDetail = document.createElement("article");
+  postDetail.className = "post-detail";
+  postDetail.id = "postDetail";
+  postDetail.setAttribute("aria-live", "polite");
+  postDetail.hidden = true;
+  document.querySelector("#posts").after(postDetail);
+}
 
 function filteredPosts() {
   return posts.filter((post) => {
